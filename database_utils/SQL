@@ -1,0 +1,38 @@
+/*DataBases creations*/
+CREATE TABLE if not exists BHUSER
+(BHUSERID INT NOT NULL AUTO_INCREMENT,
+        USERNAME VARCHAR(50) NOT NULL,
+        USERPASSWORD VARCHAR(50),
+        MOTTO VARCHAR(100) NOT NULL,
+        USEREMAIL VARCHAR(100) NOT NULL,
+        JOINDATE DATE NOT NULL,
+         PRIMARY KEY (BHUSERID)
+   ) ;
+
+CREATE TABLE if not exists BHPOST
+   (POSTID INT NOT NULL AUTO_INCREMENT,
+	POSTDATE DATE NOT NULL,
+	POSTTEXT VARCHAR(141) NOT NULL,
+	BHUSERID INT NOT NULL,
+	PRIMARY KEY (POSTID)
+	);
+
+/*Inserts*/
+Insert into BHUSER(USERNAME,USERPASSWORD,MOTTO,USEREMAIL,JOINDATE)
+values ('Slava','password','motto for user 1','user1@
+domain.com',STR_TO_DATE('2021-09-22', '%Y-%m-%d'));
+Insert into BHUSER (USERNAME,USERPASSWORD,MOTTO,USEREMAIL,JOINDATE)
+values ('Kate','password','motto for user 2','user2@domain.com',
+STR_TO_DATE('2021-09-21', '%Y-%m-%d'));
+Insert into BHUSER (USERNAME,USERPASSWORD,MOTTO,USEREMAIL,JOINDATE)
+values ('Liza','password','motto for user 3','user3@domain.com',
+STR_TO_DATE('2021-09-21', '%Y-%m-%d'));
+Insert into BHUSER (USERNAME,USERPASSWORD,MOTTO,USEREMAIL,JOINDATE)
+values ('Bella','password','motto for user 4','user4@domain.com',
+STR_TO_DATE('2021-09-21', '%Y-%m-%d'));
+
+Insert into BHPOST (POSTDATE,POSTTEXT,BHUSERID) values (STR_TO_DATE('2021-09-21', '%Y-%m-%d'),'This is a test post',1);
+Insert into BHPOST (POSTDATE,POSTTEXT,BHUSERID) values (STR_TO_DATE('2021-09-21', '%Y-%m-%d'),'Bullhorn is a fun program!',2);
+Insert into BHPOST (POSTDATE,POSTTEXT,BHUSERID) values (STR_TO_DATE('2021-09-21', '%Y-%m-%d'),'Hello, I am posting something',2);
+
+/**/

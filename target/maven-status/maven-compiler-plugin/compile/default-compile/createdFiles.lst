@@ -1,0 +1,11 @@
+main\java\ru\brown\model\Bhuser.class
+main\java\ru\brown\controller\LoginServlet.class
+main\java\ru\brown\controller\PostServ.class
+main\java\ru\brown\controller\AddUser.class
+main\java\ru\brown\controller\Newsfeed.class
+main\java\ru\brown\service\DbUtil.class
+main\java\ru\brown\model\Bhpost.class
+main\java\ru\brown\controller\ProfileServlet.class
+main\java\ru\brown\service\DbUser.class
+main\java\ru\brown\service\DbPost.class
+main\java\ru\brown\service\util\MD5Util.class
