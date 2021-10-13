@@ -22,6 +22,12 @@ public class Bhuser implements Serializable {
     @OneToMany(mappedBy = "bhuser")
     private List<Bhpost> bhposts;
 
+    @Override
+    public String toString() {
+        return "User name is: "+this.username+
+                " and his Join date is: "+ this.joindate;
+    }
+
     public Bhuser() {
     }
 

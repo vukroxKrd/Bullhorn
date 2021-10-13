@@ -18,13 +18,14 @@ job which is to validate the user and add them to the session so
  * that user will be available to all pages. If the user is not
 valid then the login servlet will redirect back to the login page.
  */
-@WebServlet("/LoginServlet")
+@WebServlet(name = "LoginServlet", value = "/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     public LoginServlet() {
         super();
     }
+
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
