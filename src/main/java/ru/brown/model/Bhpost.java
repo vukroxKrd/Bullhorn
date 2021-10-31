@@ -5,8 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@NamedQuery(name = "Bhpost.findAll",
-        query = "SELECT b FROM Bhpost b")
+@NamedQuery(name = "Bhpost.findAll", query = "SELECT b FROM Bhpost b")
 public class Bhpost implements Serializable {
     private static final long serialVersionUID = 1L;
 

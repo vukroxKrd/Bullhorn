@@ -26,7 +26,6 @@ public class LoginServlet extends HttpServlet {
         super();
     }
 
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
         //this page does not require user to be loggedin
